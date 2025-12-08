@@ -16,5 +16,5 @@ order: 4
 
 ### Contact
 - Email: inttype96@gmail.com
-- GitHub: [Int-Type](https://github.com/Int-Type)
-- LinkedIn: [Profile](https://www.linkedin.com/in/inttype)
+- GitHub: [inttype96](https://github.com/inttype96)
+- LinkedIn: [inttype](https://www.linkedin.com/in/inttype)
