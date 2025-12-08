@@ -13,9 +13,9 @@ This site is built with a customized version of the
 
 ## Content Copyright
 
-All blog posts and original contents in this repository are
-© 2025 Int-Type. All rights reserved.
+Unless otherwise noted, all contents in this repository are licensed under  
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
 
-Unauthorized copying, redistribution, or commercial use of the contents is prohibited.
+Commercial use of the contents is strictly prohibited without prior permission.
 
 [license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
