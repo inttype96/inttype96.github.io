@@ -6,6 +6,11 @@
 #   url: {homepage_of_author}
 # -------------------------------------
 
+inttype:
+  name: IntType
+  twitter: inttype96
+  url: https://github.com/Int-Type/
+
 cotes:
   name: Cotes Chung
   twitter: cotes2020

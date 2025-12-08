@@ -16,6 +16,10 @@
 }
 
 header {
+  border-bottom: 1px solid var(--main-border-color);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+
   .post-desc {
     @extend %heading;
 
@@ -164,6 +168,7 @@ header {
     &:hover {
       background-color: #A0C4FF;
       color: #ffffff;
+      border-color: #A0C4FF;
 
       &:not(.disabled)::before {
         color: whitesmoke;
