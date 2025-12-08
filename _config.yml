@@ -16,14 +16,14 @@ timezone: Asia/Seoul
 
 title: Chirpy # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Junior Developer # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  개인 기술 정리 및 일상 콘텐츠를 기록하는 블로그입니다. 개발 과정에서의 문제 해결, 학습 내용, 그리고 개인적인 기록들을 정리합니다.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://int-type.github.io"
 
 github:
   username: Int-Type # change to your GitHub username
@@ -39,11 +39,11 @@ social:
   fediverse_handle: "@you@domain.com" # change to your fediverse handle or leave empty
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/Int-Type # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/inttype
 
 # Site Verification Settings
 webmaster_verifications:
@@ -60,9 +60,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: 'G-6F2606WENE' # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: inttype # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -76,7 +76,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
