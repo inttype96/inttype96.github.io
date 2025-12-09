@@ -1,0 +1,74 @@
+/* 기본 details 스타일 */
+details {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background-color: #fafbfc;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+  overflow: hidden; /* 애니메이션용 */
+}
+
+/* summary 스타일 */
+details > summary {
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  color: #24292e;
+  transition: color 0.25s ease;
+}
+
+/* 기본 화살표 제거 */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* hover 효과 */
+details > summary:hover {
+  color: #0366d6;
+}
+
+/* 애니메이션 구현 핵심 */
+details .content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.25s ease, max-height 0.35s ease;
+}
+
+details[open] .content {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+details[open] {
+  background-color: #ffffff;
+  border-color: #c4d1e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  details {
+    background-color: #161b22;
+    border-color: #30363d;
+  }
+
+  details > summary {
+    color: #c9d1d9;
+  }
+
+  details > summary:hover {
+    color: #58a6ff;
+  }
+
+  details[open] {
+    background-color: #0d1117;
+    border-color: #484f58;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  }
+
+  details .content {
+    color: #c9d1d9;
+  }
+}
