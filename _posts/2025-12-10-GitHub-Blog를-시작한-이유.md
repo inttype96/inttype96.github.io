@@ -6,9 +6,6 @@ date: 2025-12-10 00:10:00 +0900
 categories: [Blogging, Miscellany]
 tags: [blogging, developer-blog, github-pages]
 pin: false
-image:
-    path: /assets/img/github-mark.svg
-    alt: GitHub Mark
 ---
 
 ## GitHub Blog를 시작하게 된 이유
@@ -26,7 +23,7 @@ image:
 
 ---
 
-## 그런데 왜 GitHub Blog인가요?
+## 그런데 왜 GitHub Pages인가요?
 
 블로그를 다시 시작하려고 여러 플랫폼을 비교해보았고, 네이버, 티스토리, 벨로그, GitHub Pages 중 GitHub Pages를 선택하게 되었습니다.
 
@@ -41,6 +38,7 @@ image:
 
 <details>
 <summary>개인적인 선택 이유</summary>
+
 사실 위 비교 내용은 검색만 해도 쉽게 찾을 수 있는 정보이고, 개발 블로그를 시작하려는 분들이라면 대부분 알고 있는 내용일 것입니다.
   
 개인적인 생각으로는 네이버 블로그는 후원·협찬 관련 게시글이 많아지면서 예전보다 정보 신뢰도가 떨어지는 느낌을 받았습니다. (개발 블로그와는 직접적인 연관은 없지만, 전체적인 분위기가 그렇게 느껴졌습니다)
