@@ -88,7 +88,7 @@ MODIFY status ENUM('ACTIVE', 'INACTIVE', 'DORMANT');
 
 ## 1) ENUM 사용 구조
 
-ENUM은 DB에서 값을 직접 강제합니다.
+### ENUM은 DB에서 값을 직접 강제합니다.
 
 ```
 ┌──────────────┐
@@ -98,16 +98,16 @@ ENUM은 DB에서 값을 직접 강제합니다.
 └──────────────┘
 ```
 
-ENUM 값:
+### ENUM 값:
 - ACTIVE  
 - INACTIVE  
 - DORMANT  
 
-동작 방식:
+### 동작 방식:
 - Application → 문자열 전달  
 - DB → ENUM 목록에 없는 문자열이면 거부  
 
-특징:
+### 특징:
 - 장점: 잘못된 데이터가 들어가기 어려움  
 - 단점: 값 추가 시 반드시 ALTER 필요(운영 리스크 높음)  
 
@@ -122,17 +122,17 @@ VARCHAR는 문자열을 그대로 저장하고
 Application Enum ──(문자열 변환)──> DB VARCHAR 저장
 ```
 
-예시  
+### 예시  
 Application : Status.ACTIVE  
 DB  : "ACTIVE"
 
-데이터 흐름:
+### 데이터 흐름:
 
 ```
 Application enum → "ACTIVE" → DB 저장
 ```
 
-특징:
+### 특징:
 - 장점: 새로운 값 추가해도 DB 스키마 변경 필요 없음  
 - 단점: 오타 입력 가능 → Application에서 강제 필요  
 
@@ -172,20 +172,20 @@ enum Status {
 }
 ```
 
-데이터 흐름:
+### 데이터 흐름:
 
 ```
 Application enum → 숫자(1) → DB 저장
 DB 숫자(1) → enum(Status.ACTIVE)
 ```
 
-특징:
+### 특징:
 - 장점: 확장성 최고, 값 변경·추가 자유로움  
 - 단점: 매핑 관리 필요(복잡도 증가)  
 
 ---
 
-## 4) 상태값 선택 기준 흐름도 (Markdown 텍스트 버전)
+## 4) 상태값 선택 기준 흐름도
 
 ```
 상태값 정의 필요
