@@ -64,7 +64,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: 'G-6F2606WENE' # fill in your Google Analytics ID
+    id: "G-6F2606WENE" # fill in your Google Analytics ID
   goatcounter:
     id: inttype # fill in your GoatCounter ID
   umami:
@@ -100,7 +100,7 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+# cdn: "https://chirpy-img.netlify.app"  d
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/commons/avatar.jpg"
