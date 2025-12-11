@@ -1,5 +1,6 @@
 ---
 title: "MySQL에서 왜 TIMESTAMP 대신 DATETIME을 사용해야 할까?"
+slug: mysql-modeling-datetime-timestamp
 description: >-
   공부할 때는 자연스럽게 TIMESTAMP를 사용했지만, 실제 서비스 설계를 하면서
   DATETIME이 더 적합하다는 점을 알게 되었습니다. 두 타입의 차이와 선택 기준을 정리했습니다.

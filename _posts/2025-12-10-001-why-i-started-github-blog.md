@@ -1,5 +1,6 @@
 ---
 title: GitHub Blog를 시작하게 된 이유
+slug: why-i-started-github-blog
 description: 개발 블로그를 다시 시작하게 된 이유와 여러 플랫폼 중 GitHub Pages를 선택한 개인적인 기준을 정리한 글입니다.
 author: inttype
 date: 2025-12-10 00:10:00 +0900

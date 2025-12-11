@@ -1,5 +1,6 @@
 ---
 title: "MySQL 테이블 ENUM vs VARCHAR vs INT"
+slug: mysql-modeling-enum-varchar-int
 description: >-
   개발 공부 때는 DB를 설계할 때 ENUM을 자주 사용했습니다. <br>
   하지만 실무에서는 왜 VARCHAR나 INT가 더 많이 사용될까요? <br>
