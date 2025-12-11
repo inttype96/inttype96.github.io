@@ -1,15 +1,18 @@
 ---
-title: "DB 설계할 때 ENUM vs VARCHAR vs INT"
+title: "MySQL 테이블 ENUM vs VARCHAR vs INT"
 description: >-
   개발 공부 때는 DB를 설계할 때 ENUM을 자주 사용했습니다. <br>
   하지만 실무에서는 왜 VARCHAR나 INT가 더 많이 사용될까요? <br>
   ENUM의 장단점, 운영 시 위험성, 세 방식의 매핑 구조를 DB 모델링 관점에서 정리한 글입니다.
 author: inttype
 date: 2025-12-10 23:22:00 +0900
-categories: [Database, Modeling]
-tags: [db, enum, varchar, int, schema, modeling, erd]
+categories: [Database, MySQL, Modeling]
+tags: [db, mysql, mariadb, enum, varchar, int, schema, modeling, erd]
 pin: false
 ---
+
+> ⚠️ 본 글의 내용은 MySQL(MariaDB) 기준으로 작성되었습니다.  
+> 다른 DBMS(PostgreSQL, Oracle 등)에서는 ENUM의 동작 방식이 다를 수 있습니다.
 
 DB 테이블을 설계하다 보면 속성을 **ENUM, VARCHAR, INT 중 어떤 것으로 정의할지** 고민하게 됩니다.  
 개발 공부 단계에서는 ENUM을 자주 사용했지만, 실무를 경험하면서 생각이 많이 변했습니다.
