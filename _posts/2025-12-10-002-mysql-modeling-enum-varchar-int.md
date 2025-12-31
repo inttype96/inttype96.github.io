@@ -45,7 +45,7 @@ DB 테이블을 설계하다 보면 속성을 **ENUM, VARCHAR, INT 중 어떤 �
 | **VARCHAR** | - 값 추가 자유롭고 스키마 변경 불필요<br>- 사람이 읽기 쉬움 | - 오타 발생 위험<br>- 유효성 검증을 애플리케이션에서 처리해야 함<br>- 저장 공간이 ENUM보다 큼 |
 | **INT** | - 확장성 최고<br>- 값 추가해도 DB 변경 필요 없음<br>- 인덱스 효율이 좋아 성능 우수 | - 숫자만으로 의미 파악 어려움<br>- 매핑(enum/코드 테이블) 필요<br>- 코드/DB 불일치 위험 |
 
-👉 요약  
+요약  
 - ENUM은 명확하지만 변경에 취약  
 - VARCHAR는 유연하지만 검증 책임이 Application으로 이동  
 - INT는 확장성 최고지만 관리해야 할 매핑이 늘어남  
@@ -90,7 +90,7 @@ MODIFY status ENUM('ACTIVE', 'INACTIVE', 'DORMANT');
 
 ## ENUM / VARCHAR / INT 실제 매핑 구조
 
-## 1) ENUM 사용 구조
+## 1. ENUM 사용 구조
 
 ### ENUM은 DB에서 값을 직접 강제합니다.
 
@@ -117,7 +117,7 @@ MODIFY status ENUM('ACTIVE', 'INACTIVE', 'DORMANT');
 
 ---
 
-## 2) VARCHAR 사용 구조
+## 2. VARCHAR 사용 구조
 
 VARCHAR는 문자열을 그대로 저장하고  
 유효성 검증은 Application(enum)이 담당합니다.
@@ -142,7 +142,7 @@ Application enum → "ACTIVE" → DB 저장
 
 ---
 
-## 3) INT + Enum 매핑 구조  
+## 3. INT + Enum 매핑 구조  
 (대규모 서비스에서 가장 일반적)
 
 DB에는 숫자만 저장하고  
@@ -189,7 +189,7 @@ DB 숫자(1) → enum(Status.ACTIVE)
 
 ---
 
-## 4) 상태값 선택 기준 흐름도
+## 4. 상태값 선택 기준 흐름도
 
 ```
 상태값 정의 필요
